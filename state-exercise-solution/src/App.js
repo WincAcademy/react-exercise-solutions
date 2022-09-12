@@ -2,17 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { DrinkButtons } from './components/DrinkButtons';
 import { DrinkChoice } from './components/DrinkChoice';
-
-const tea = {
-	name: 'Tea',
-	imgUrl: 'https://media.wincacademy.nl/tea.jpeg',
-	alt: `Picture of a cup of tea`,
-};
-const coffee = {
-	name: 'Coffee',
-	imgUrl: 'https://media.wincacademy.nl/coffee.jpeg',
-	alt: `Picture of a cup coffee`,
-};
+import { coffee, tea } from './utils/data';
 
 export const App = () => {
 	const [userDrink, setUserDrink] = useState(coffee);

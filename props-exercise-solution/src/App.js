@@ -1,19 +1,7 @@
 import './App.css';
 import { DrinkButtons } from './components/DrinkButtons';
 import { DrinkChoice } from './components/DrinkChoice';
-
-// TODO: Create utils/utils.js
-const tea = {
-	name: 'Tea',
-	imgUrl: 'https://media.wincacademy.nl/coffee.jpeg',
-	alt: `Picture of a cup of tea`,
-};
-
-const coffee = {
-	name: 'Coffee',
-	imgUrl: 'https://media.wincacademy.nl/tea.jpeg',
-	alt: `Picture of a cup coffee`,
-};
+import { tea } from './utils/data';
 
 export const App = () => {
 	const greeting = 'Welcome to our cafe!';
