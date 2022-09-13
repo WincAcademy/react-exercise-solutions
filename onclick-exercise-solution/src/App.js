@@ -11,11 +11,7 @@ export const App = () => {
 	return (
 		<div className="App">
 			<h1>{greeting}</h1>
-			<DrinkButtons
-				drinkOne={tea} // TODO: Write change of tea.name to tea
-				drinkTwo={coffee}
-				onClick={setUserDrink}
-			/>
+			<DrinkButtons drinkOne={tea} drinkTwo={coffee} onClick={setUserDrink} />
 			<DrinkChoice drink={userDrink} />
 		</div>
 	);
