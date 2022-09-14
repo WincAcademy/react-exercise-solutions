@@ -1,7 +1,7 @@
 import './App.css';
 import { DrinkButtons } from './components/DrinkButtons';
 import { DrinkChoice } from './components/DrinkChoice';
-import { tea } from './utils/data';
+import { tea, coffee } from './utils/data';
 
 export const App = () => {
 	const greeting = 'Welcome to our cafe!';
