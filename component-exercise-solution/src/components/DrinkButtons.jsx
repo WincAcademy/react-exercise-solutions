@@ -1,3 +1,4 @@
+import React from 'react';
 import './DrinkButtons.css';
 
 export const DrinkButtons = () => {
