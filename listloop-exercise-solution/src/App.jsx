@@ -12,7 +12,7 @@ export const App = () => {
 	return (
 		<div className="App">
 			<h1>{greeting}</h1>
-			{/* <DrinkButtons
+			{/* <DrinåçkButtons
 				drinkOne={tea} 
 				drinkTwo={coffee}
 				onClick={setUserDrink}
