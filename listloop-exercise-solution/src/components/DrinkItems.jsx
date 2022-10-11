@@ -1,8 +1,10 @@
+import { DrinkItem } from './DrinkItem';
+
 export const DrinkItems = ({ drinks }) => {
 	return (
 		<>
 			{drinks.map((drink) => (
-				<p>{drink.name}</p>
+				<DrinkItem key={drink.id} drink={drink} />
 			))}
 		</>
 	);

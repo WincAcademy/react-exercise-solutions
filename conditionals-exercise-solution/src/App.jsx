@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './App.css';
 import { DrinkButtons } from './components/DrinkButtons';
 import { DrinkChoice } from './components/DrinkChoice';
-import { DrinkSearch } from './components/DrinkSearch';
 import { availableDrinks } from './utils/data';
 
 export const App = () => {
@@ -21,7 +20,6 @@ export const App = () => {
 					onClick={setUserDrink}
 				/>
 			)}
-			{/* <DrinkSearch availableDrinks={availableDrinks} /> */}
 		</div>
 	);
 };

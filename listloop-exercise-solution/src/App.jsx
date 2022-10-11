@@ -12,13 +12,17 @@ export const App = () => {
 	return (
 		<div className="App">
 			<h1>{greeting}</h1>
-			{/* <DrinåçkButtons
-				drinkOne={tea} 
-				drinkTwo={coffee}
-				onClick={setUserDrink}
-			/> */}
+			{/* {userDrink ? (
+				<DrinkChoice drink={userDrink} />
+			) : (
+				<DrinkButtons
+					drinkOne={availableDrinks[0]}
+					drinkTwo={availableDrinks[1]}
+					onClick={setUserDrink}
+				/>
+			)} */}
+
 			<DrinkSearch availableDrinks={availableDrinks} />
-			{/* <DrinkChoice drink={userDrink} /> */}
 		</div>
 	);
 };
