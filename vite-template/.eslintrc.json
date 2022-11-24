@@ -18,6 +18,5 @@
 	"plugins": ["react"],
 	"rules": {
 		"react/prop-types": 0
-		// "react/jsx-runtime": 1
 	}
 }

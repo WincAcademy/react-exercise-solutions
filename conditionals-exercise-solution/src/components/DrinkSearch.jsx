@@ -8,9 +8,10 @@ export const DrinkSearch = ({ availableDrinks }) => {
 		return drink.name.toLowerCase().includes(searchField.toLowerCase());
 	});
 
+	console.log(matchedDrinks);
+
 	const handleChange = (event) => {
 		setSearchField(event.target.value);
-		console.log(matchedDrinks);
 	};
 
 	return (
