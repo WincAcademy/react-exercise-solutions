@@ -1,7 +1,7 @@
 import './Button.css';
 
 export const Button = ({ text, onClick }) => (
-	<button className="Button" onClick={onClick}>
+	<button className="button" onClick={onClick}>
 		{text}
 	</button>
 );

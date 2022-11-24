@@ -4,9 +4,9 @@ export const DrinkButtons = () => {
 	return (
 		<>
 			<h2>Would you like tea or coffee?</h2>
-			<div className="Button-group">
-				<button className="Button">Tea</button>
-				<button className="Button">Coffee</button>
+			<div className="button-group">
+				<button className="button">Tea</button>
+				<button className="button">Coffee</button>
 			</div>
 		</>
 	);

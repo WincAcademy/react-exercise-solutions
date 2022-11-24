@@ -1,10 +1,10 @@
-.Button-group {
+.button-group {
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
 }
 
-.Button {
+.button {
 	margin-top: 1rem;
 	border-radius: 10px;
 	border: none;
