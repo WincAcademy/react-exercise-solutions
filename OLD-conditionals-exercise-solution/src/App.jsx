@@ -1,21 +1,24 @@
+import { useState } from 'react';
 import './App.css';
 import { DrinkButtons } from './components/DrinkButtons';
 import { DrinkChoice } from './components/DrinkChoice';
-import { tea, coffee } from './utils/data';
+import { availableDrinks } from './utils/data';
 
 export const App = () => {
+	const [userDrink, setUserDrink] = useState();
 	const greeting = 'Welcome to our cafe!';
-	const userDrink = undefined;
 
 	return (
 		<div className="app">
+			<h1>{greeting}</h1>
 			{userDrink ? (
 				<DrinkChoice drink={userDrink} />
 			) : (
-				<>
-					<h1>{greeting}</h1>
-					<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
-				</>
+				<DrinkButtons
+					drinkOne={availableDrinks[0]}
+					drinkTwo={availableDrinks[1]}
+					onClick={setUserDrink}
+				/>
 			)}
 		</div>
 	);

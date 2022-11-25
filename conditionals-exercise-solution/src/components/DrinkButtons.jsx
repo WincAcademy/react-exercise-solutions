@@ -1,15 +1,15 @@
 import './DrinkButtons.css';
 import { Button } from './ui/Button';
 
-export const DrinkButtons = ({ drinkOne, drinkTwo, onClick }) => {
+export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
 	return (
 		<>
 			<h2>
-				Would you like {drinkOne.name} or {drinkTwo.name}?
+				Would you like {drinkOne} or {drinkTwo}?
 			</h2>
 			<div className="button-group">
-				<Button text={drinkOne.name} onClick={() => onClick(drinkOne)} />
-				<Button text={drinkTwo.name} onClick={() => onClick(drinkTwo)} />
+				<Button text={drinkOne} />
+				<Button text={drinkTwo} />
 			</div>
 		</>
 	);
