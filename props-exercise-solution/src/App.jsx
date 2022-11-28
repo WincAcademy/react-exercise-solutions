@@ -5,6 +5,7 @@ import { tea, coffee } from './utils/data';
 
 export const App = () => {
 	const greeting = 'Welcome to our cafe!';
+
 	const userDrink = tea;
 
 	return (
