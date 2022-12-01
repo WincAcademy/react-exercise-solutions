@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import { DrinkButtons } from './components/DrinkButtons';
 import { DrinkChoice } from './components/DrinkChoice';
 import { DrinkSearch } from './components/DrinkSearch';
-import { tea, coffee } from './utils/data';
 
 export const App = () => {
 	const [userDrink, setUserDrink] = useState();
@@ -17,12 +15,7 @@ export const App = () => {
 			) : (
 				<>
 					<h1>{greeting}</h1>
-					<DrinkButtons
-						drinkOne={tea}
-						drinkTwo={coffee}
-						onClick={setUserDrink}
-					/>
-					<DrinkSearch />
+					<DrinkSearch onClick={setUserDrink} />
 				</>
 			)}
 		</div>
