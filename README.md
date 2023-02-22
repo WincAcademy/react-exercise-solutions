@@ -1,4 +1,6 @@
-# react-exercise-solutions
+# Module: React Basics
+
+Code examples for the "React Basics" module
 
 This repository contains the code for exercises, solutions and examples inside the React Basics Module.
 
