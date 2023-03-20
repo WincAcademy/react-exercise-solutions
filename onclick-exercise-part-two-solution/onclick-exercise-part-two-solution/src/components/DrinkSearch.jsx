@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { availableDrinks } from '../utils/data';
-import { DrinkItems } from './DrinkItems';
+import { DrinkList } from './DrinkList';
 import { TextInput } from './ui/TextInput';
 
-export const DrinkSearch = ({ onClick }) => {
-	const [searchField, setSearchField] = useState('test drink');
+export const DrinkSearch = ({ clickFn }) => {
+  const [searchField, setSearchField] = useState('test drink');
 
-	return (
-		<>
-			<label>Search for drinks:</label>
-			<TextInput />
-			<DrinkItems onClick={onClick} drinks={availableDrinks} />
-		</>
-	);
+  return (
+    <>
+      <label>Search for drinks:</label>
+      <TextInput />
+      <DrinkList clickFn={clickFn} drinks={availableDrinks} />
+    </>
+  );
 };
