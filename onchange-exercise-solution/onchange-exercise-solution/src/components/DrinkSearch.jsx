@@ -1,24 +1,24 @@
 import { useState } from 'react';
 import { availableDrinks } from '../utils/data';
-import { DrinkItems } from './DrinkItems';
+import { DrinkList } from './DrinkList';
 import { TextInput } from './ui/TextInput';
 
-export const DrinkSearch = ({ onClick }) => {
-	const [searchField, setSearchField] = useState('');
+export const DrinkSearch = ({ clickFn }) => {
+  const [searchField, setSearchField] = useState('');
 
-	const matchedDrinks = availableDrinks.filter((drink) => {
-		return drink.name.toLowerCase().includes(searchField.toLowerCase());
-	});
+  const matchedDrinks = availableDrinks.filter((drink) => {
+    return drink.name.toLowerCase().includes(searchField.toLowerCase());
+  });
 
-	const handleChange = (event) => {
-		setSearchField(event.target.value);
-	};
+  const handleChange = (event) => {
+    setSearchField(event.target.value);
+  };
 
-	return (
-		<>
-			<label>Search for drinks:</label>
-			<TextInput onChange={handleChange} />
-			<DrinkItems onClick={onClick} drinks={matchedDrinks} />
-		</>
-	);
+  return (
+    <>
+      <label>Search for drinks:</label>
+      <TextInput changeFn={handleChange} />
+      <DrinkList clickFn={clickFn} drinks={matchedDrinks} />
+    </>
+  );
 };
