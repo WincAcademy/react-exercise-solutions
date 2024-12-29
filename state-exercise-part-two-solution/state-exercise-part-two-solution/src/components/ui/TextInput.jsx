@@ -1,3 +1,5 @@
-import './TextInput.css';
+import { Input } from "@chakra-ui/react";
 
-export const TextInput = () => <input className="text-input"></input>;
+export const TextInput = ({ changeFn }) => {
+	return <Input onChange={changeFn} />;
+};
