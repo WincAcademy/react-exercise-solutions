@@ -4,7 +4,7 @@ import { DrinkButtons } from './components/DrinkButtons'
 export const App = () => {
     return (
         <>
-            <h1>Hello World!</h1>
+            <h1>Welcome to our cafe!</h1>
             <DrinkButtons />
         </>
     )
