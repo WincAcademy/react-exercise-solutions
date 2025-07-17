@@ -6,8 +6,8 @@ export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
         <>
             <h2>Would you like tea or coffee?</h2>
             <div className="button-group">
-                <button className="button">{drinkOne}</button>
-                <button className="button">{drinkTwo}</button>
+                <Button>{drinkOne}</Button>
+                <Button>{drinkTwo}</Button>
             </div>
         </>
 	);
