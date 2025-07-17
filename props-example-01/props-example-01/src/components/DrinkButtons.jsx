@@ -1,7 +1,7 @@
 import './DrinkButtons.css';
 
 export const DrinkButtons = (props) => {
-	return (
+    return (
         <>
             <h2>Would you like tea or coffee?</h2>
             <div className="button-group">
@@ -9,5 +9,5 @@ export const DrinkButtons = (props) => {
                 <button className="button">{props.drinkTwo}</button>
             </div>
         </>
-	);
+    );
 };

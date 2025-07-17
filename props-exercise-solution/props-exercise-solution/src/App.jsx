@@ -4,15 +4,14 @@ import { DrinkChoice } from './components/DrinkChoice';
 import { tea, coffee } from './utils/data';
 
 export const App = () => {
-	const greeting = 'Welcome to our cafe!';
+    const greeting = 'Welcome to our cafe!';
+    const userDrink = tea;
 
-	const userDrink = tea;
-
-	return (
-		<div className="app">
-			<h1>{greeting}</h1>
-			<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
-			<DrinkChoice drink={userDrink} />
-		</div>
-	);
+    return (
+        <>
+            <h1>{greeting}</h1>
+            <DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
+            <DrinkChoice drink={userDrink} />
+        </>
+    );
 };
