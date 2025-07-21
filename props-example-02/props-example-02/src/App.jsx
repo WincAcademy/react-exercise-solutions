@@ -7,7 +7,10 @@ export const App = () => {
     return (
         <>
             <h1>Winc Weather App</h1>
-            <WeatherIcon imageSrc="/weather-icons/sunny.png" weatherType={sunnyWeather} />
+            <WeatherIcon
+                imageSrc="/weather-icons/sunny.png"
+                weatherType={sunnyWeather}
+            />
         </>
     )
 }
