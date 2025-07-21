@@ -1,13 +1,13 @@
 import './App.css'
-import { DrinkButtons } from './components/DrinkButtons'
+import { WeatherIcon } from './components/WeatherIcon'
 
 export const App = () => {
-    const coffee = "Coffee";
+    const sunnyWeather = "Sunny";
 
     return (
         <>
-            <h1>Welcome to our cafe!</h1>
-            <DrinkButtons drinkOne={"Tea"} drinkTwo={coffee} />
+            <h1>Winc Weather App</h1>
+            <WeatherIcon imageSrc="/weather-icons/sunny.png" weatherType={sunnyWeather} />
         </>
     )
 }
