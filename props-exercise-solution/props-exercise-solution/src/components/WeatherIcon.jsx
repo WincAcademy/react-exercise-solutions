@@ -1,7 +1,7 @@
 import './WeatherIcon.css';
 
 export const WeatherIcon = ({ weather }) => {
-	return (
+    return (
         <>
             <img
                 className="weather-icon"
@@ -10,5 +10,5 @@ export const WeatherIcon = ({ weather }) => {
             />
             <h2>{weather.weatherType}</h2>
         </>
-	);
+    );
 };
