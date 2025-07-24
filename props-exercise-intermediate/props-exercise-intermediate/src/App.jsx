@@ -1,13 +1,12 @@
 import './App.css'
 import { WeatherIcon } from './components/WeatherIcon'
-// import { sunnyWeather } from './utils/data'
-import { cloudyWeather } from './utils/data'
+import { sunnyWeather } from './utils/data'
 
 export const App = () => {
     return (
         <>
             <h1>Winc Weather App</h1>
-            <WeatherIcon weather={cloudyWeather} />
+            <WeatherIcon weather={sunnyWeather} />
         </>
     )
 }
