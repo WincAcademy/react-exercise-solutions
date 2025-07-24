@@ -7,7 +7,7 @@ if (isHappy) {
     console.log("Meh.");
 }
 
-// JSX tenary operator (if-else-expression)
+// JSX ternary operator (if-else-expression)
 export const App = () => {
     return (
         isHappy

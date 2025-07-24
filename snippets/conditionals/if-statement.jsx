@@ -4,7 +4,7 @@ const isHappy = true;
 if (isHappy)
     console.log("I'm feeling great!");
 
-// JSX truth-y operator (if-expression)
+// JSX truthy operator (if-expression)
 export const App = () => {
     return (
         isHappy && <p>I'm feeling great!</p>
