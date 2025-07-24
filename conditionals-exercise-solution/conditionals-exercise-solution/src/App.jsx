@@ -1,22 +1,18 @@
-import './App.css';
-import { DrinkButtons } from './components/DrinkButtons';
-import { DrinkChoice } from './components/DrinkChoice';
-import { tea, coffee } from './utils/data';
+import './App.css'
+import { WeatherIcon } from './components/WeatherIcon'
+import { sunnyWeather, cloudyWeather } from './utils/data'
 
 export const App = () => {
-	const greeting = 'Welcome to our cafe!';
-	const userDrink = undefined;
+    let sunny = true;
 
-	return (
-		<div className="app">
-			{userDrink ? (
-				<DrinkChoice drink={userDrink} />
-			) : (
-				<>
-					<h1>{greeting}</h1>
-					<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
-				</>
-			)}
-		</div>
-	);
-};
+    return (
+        <>
+            <h1>Winc Weather App</h1>
+            {
+                sunny
+                ? <WeatherIcon weather={sunnyWeather}  />
+                : <WeatherIcon weather={cloudyWeather} />
+            }
+        </>
+    )
+}
