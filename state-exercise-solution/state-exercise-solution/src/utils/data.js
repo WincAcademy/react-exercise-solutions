@@ -1,11 +1,11 @@
-export const tea = {
-	name: 'Tea',
-	imgUrl: 'https://media.wincacademy.nl/coffee.jpeg',
-	alt: `Picture of a cup of tea`,
+export const sunnyWeather = {
+    imageSrc: '/weather-icons/sunny.png',
+    imageAlt: 'Sunny weather icon',
+    weatherType: 'Sunny',
 };
 
-export const coffee = {
-	name: 'Coffee',
-	imgUrl: 'https://media.wincacademy.nl/tea.jpeg',
-	alt: `Picture of a cup coffee`,
+export const cloudyWeather = {
+    imageSrc: '/weather-icons/cloudy.png',
+    imageAlt: 'Cloudy weather icon',
+    weatherType: 'Cloudy',
 };
