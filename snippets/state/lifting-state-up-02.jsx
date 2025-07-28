@@ -5,7 +5,7 @@ export const App = () => {
 
     return (
         <>
-            <NumberDisplay       number={number} />
+            <NumberDisplay number={number} />
             { number > 50 && <p>The number is greater than 50!</p> }
         </>
     );
