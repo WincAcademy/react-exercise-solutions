@@ -8,7 +8,7 @@ export const App = () => {
     return (
         <>
             <h1>Winc Weather App</h1>
-            {sunny && <WeatherIcon weather={sunnyWeather} />}
+            { sunny && <WeatherIcon weather={sunnyWeather} /> }
         </>
     )
 }
