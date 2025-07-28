@@ -6,7 +6,7 @@ export const App = () => {
     return (
         <>
             <NumberDisplay number={number} />
-            { number > 50 && <p>The number is greater than 50!</p> }
+            <IsNumberEven  number={number} />
         </>
     );
 };
@@ -16,3 +16,9 @@ export const NumberDisplay = ({ number }) => {
         <p>The number is: {number}</p>
     );
 };
+
+export const IsNumberEven = ({ number }) => {
+    return (
+        <p>The number is {number % 2 === 0 ? 'even' : 'odd'}!</p>
+    );
+}
