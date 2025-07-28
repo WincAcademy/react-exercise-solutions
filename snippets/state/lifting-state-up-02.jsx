@@ -6,7 +6,7 @@ export const App = () => {
     return (
         <>
             <NumberDisplay       number={number} />
-            <DoubleNumberDisplay number={number} />
+            { number > 50 && <p>The number is greater than 50!</p> }
         </>
     );
 };
@@ -14,11 +14,5 @@ export const App = () => {
 export const NumberDisplay = ({ number }) => {
     return (
         <p>The number is: {number}</p>
-    );
-};
-
-export const DoubleNumberDisplay = ({ number }) => {
-    return (
-        <p>The double of the number is: {number * 2}</p>
     );
 };
