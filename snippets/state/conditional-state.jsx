@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export const Market = () => {
-    const [productA, setProductA] = useState();
+    const [productA, setProductA] = useState(); // Initially empty!
     const [productB, setProductB] = useState('bananas');
 
     return (
