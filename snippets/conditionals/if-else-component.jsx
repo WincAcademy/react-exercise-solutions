@@ -1,4 +1,4 @@
-const MoodText = (isHappy) => {
+const MoodText = ({ isHappy }) => {
     if (isHappy) {
         return <p>Great!</p>;
     }
